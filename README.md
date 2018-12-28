@@ -8,6 +8,36 @@ The bulk of this project and inspiration came from byt3bl33d3r.  I have taken th
 Author: Marcello Salvati ([@byt3bl33d3r](https://twitter.com/byt3bl33d3r))
 
 ### Setup
+
+Installing Terraform
+To install Terraform, find the appropriate package for your system and download it. Terraform is packaged as a zip archive.
+
+After downloading Terraform, unzip the package. Terraform runs as a single binary named terraform. Any other files in the package can be safely removed and Terraform will still function.
+
+The final step is to make sure that the terraform binary is available on the PATH. See this page for instructions on setting the PATH on Linux and Mac. This page contains instructions for setting the PATH on Windows.
+
+Verifying the Installation
+After installing Terraform, verify the installation worked by opening a new terminal session and checking that terraform is available. By executing terraform you should see help output similar to this:
+
+```
+$ terraform
+Usage: terraform [--version] [--help] <command> [args]
+```
+
+The available commands for execution are listed below.
+The most common, useful commands are shown first, followed by
+less common or more advanced commands. If you're just getting
+started with Terraform, stick with the common commands. For the
+other commands, please read the help and docs before usage.
+
+```
+Common commands:
+    apply              Builds or changes infrastructure
+    console            Interactive console for Terraform interpolations
+```
+    
+If you get an error that terraform could not be found, your PATH environment variable was not set up properly. Please go back and ensure that your PATH variable contains the directory where Terraform was installed.
+
 **Red Baron only supports Terraform version 0.11.0 or newer and will only work on Linux x64 systems.** 
 
 ```
@@ -28,7 +58,7 @@ Author: Marcello Salvati ([@byt3bl33d3r](https://twitter.com/byt3bl33d3r))
 # and set the appropriate environment variable for your use case
 
 # copy an infrastructure configuration file from the examples folder to the root directory and modify it to your needs
-#~ cp examples/complete_c2.tf .
+#~ cp examples/kali.tf .
 
 #~ terraform init
 #~ terraform plan
