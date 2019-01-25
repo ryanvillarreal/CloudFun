@@ -54,7 +54,8 @@ resource "aws_instance" "honey-server" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo /tmp/setup.sh",
+      "sudo chmod +x /tmp/setup.sh",
+      "sudo /tmp/setup.sh"
     ]
 
     connection {
