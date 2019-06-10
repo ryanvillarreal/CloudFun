@@ -1,0 +1,11 @@
+id|country
+---|
+ca-central|ca
+us-central|us
+us-west|us
+us-southeast|us
+us-east|us
+eu-west|uk
+ap-south|sg
+eu-central|de
+ap-northeast|jp

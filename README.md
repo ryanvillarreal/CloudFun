@@ -40,6 +40,9 @@ If you get an error that terraform could not be found, your PATH environment var
 
 **Red Baron only supports Terraform version 0.11.0 or newer and will only work on Linux x64 systems.** 
 
+**Linode Provider is only supported for Terraform 0.11.0. >= 0.12.0 is not supported. **
+
+
 ```
 #~ git clone https://github.com/byt3bl33d3r/Red-Baron && cd Red-Baron
 #~ export AWS_ACCESS_KEY_ID="accesskey"
